@@ -27,9 +27,7 @@
     "dist"
   ],
   "bin": {
-    "standard-commit": "bin/commit.js",
-    "standard-commithook": "bin/commithook.js",
-    "standard-commitlint": "bin/commitlint.js"
+    "standard-commit": "bin/commit.js"
   },
   "scripts": {
     "start": "ts-node src/cli/commit.ts",
