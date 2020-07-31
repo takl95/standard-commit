@@ -1,7 +1,7 @@
 {
-  "name": "standard-commit",
+  "name": "standard-commit-2",
   "version": "3.3.0",
-  "description": "conventional commit",
+  "description": "a fork of stasson/standard-commit",
   "author": {
     "name": "Sebastien Tasson",
     "email": "sebastien.tasson@gmail.com"
@@ -9,10 +9,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/stasson/standard-commit.git"
+    "url": "git+https://github.com/takl95/standard-commit.git"
   },
   "bugs": {
-    "url": "https://github.com/stasson/standard-commit/issues"
+    "url": "https://github.com/takl95/standard-commit/issues"
   },
   "keywords": [
     "commit",
@@ -27,7 +27,7 @@
     "dist"
   ],
   "bin": {
-    "standard-commit": "bin/commit.js"
+    "cc": "bin/commit.js"
   },
   "scripts": {
     "start": "ts-node src/cli/commit.ts",
@@ -44,9 +44,6 @@
     "release:checks": "run-s test:*",
     "release:version": "standard-version",
     "release:publish": "git push --follow-tags && npm publish"
-  },
-  "gitHooks": {
-    "commit-msg": "ts-node src/cli/commithook.ts"
   },
   "jest": {
     "transform": {
@@ -108,5 +105,5 @@
   "engines": {
     "node": ">=10.0.0"
   },
-  "homepage": "https://github.com/stasson/standard-commit#readme"
+  "homepage": "https://github.com/takl95/standard-commit#readme"
 }
