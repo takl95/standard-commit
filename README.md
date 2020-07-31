@@ -4,7 +4,7 @@ A zero-config opiniated, [commitizen](https://github.com/commitizen/cz-cli)
 like command line utility to use
 [conventional commits](https://conventionalcommits.org/).
 
-- **cc**: Same as `git commit` but with prompt and formating of the
+- **cc**: Same as `git commit` but with prompt and formatting of the
   commit message.
 
 ## Installation
