@@ -8,12 +8,12 @@ import { validateSubject } from './commitlint'
 
 // prettier-ignore
 const enum PromptMessage {
-  TYPE    = 'type:    ',
+  TYPE    = 'Type:    ',
   SCOPE   = 'scope:   ',
-  SUBJECT = 'subject: ',
-  BODY    = 'body:    ',
-  BREAK   = 'breaks:  ',
-  ISSUE   = 'closes:  ',
+  SUBJECT = 'Description: ',
+  BODY    = 'Details:    ',
+  BREAK   = 'Breaking Change Description (leave empty if none):  ',
+  ISSUE   = 'Ticket:',
   CONFIRM = 'commit?  ',
 }
 
@@ -215,7 +215,6 @@ export async function promptConfig() {
     'build',
     'ci',
     'docs',
-    'perf',
     'refactor',
     'revert',
     'style',
@@ -228,7 +227,18 @@ export async function promptConfig() {
       name: 'types',
       message: 'types',
       choices: typeChoices,
-      initial: ['feat', 'fix', 'chore', 'docs', 'refactor', 'test']
+      initial: [
+        'feat',
+        'fix',
+        'chore',
+        'build',
+        'ci',
+        'docs',
+        'refactor',
+        'revert',
+        'style',
+        'test'
+      ]
     },
     {
       type: 'select',
