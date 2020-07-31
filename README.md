@@ -7,14 +7,18 @@ like command line utility to use
 - **cc**: Same as `git commit` but with prompt and formating of the
   commit message.
 
-## Usage
-
+## Installation
 ```bash
 npm install -g standard-commit-2
 ```
-
+## Usage
 ```bash
 cc --help
+```
+## Update
+
+```bash
+npm update -g standard-commit-2
 ```
 
 ## Configuration
@@ -22,5 +26,4 @@ Use the suggested defaults.
 ```bash
 cc --init
 ```
-
-you can configure standard-commit via a `.standard-commitrc` file 
+you can configure standard-commit via a `.standard-commitrc` file. You should add this file to the git repo.
