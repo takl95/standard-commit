@@ -27,14 +27,11 @@ export function formatBreaking(change: string) {
   return 'BREAKING CHANGE: ' + change.trim()
 }
 
-export function formatIssues(issues: string[], prefix = 'Closes') {
+export function formatIssues(issues: string[], prefix = '') {
   const list = issues
-    .map(issue => {
-      const id = issue.trim()
-      return id[0] == '#' ? id : `#${id}`
-    })
+    .map(issue => issue.trim())
     .join(', ')
-  return `${prefix} ${list}`
+  return `${prefix}${list}`
 }
 
 export function formatBody(body: string[]) {
@@ -57,7 +54,7 @@ export function formatMessage(commit: CommitMessage): string {
   if (commit.issues && commit.issues.length) {
     const block = formatIssues(
       commit.issues,
-      commit.type === 'fix' ? 'Fixes' : 'Closes'
+      commit.type === 'fix' ? 'Fixes: ' : ''
     )
     message = appendBlock(message, block)
   }
