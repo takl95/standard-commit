@@ -27,7 +27,8 @@
     "dist"
   ],
   "bin": {
-    "cc": "bin/commit.js"
+    "cc": "bin/commit.js",
+    "standard-commit-2": "bin/commit.js"
   },
   "scripts": {
     "start": "ts-node src/cli/commit.ts",
