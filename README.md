@@ -15,6 +15,12 @@ npm install -g standard-commit-2
 ```bash
 cc --help
 ```
+## Git Alias
+```bash
+git config --global alias.cc "!standard-commit-2"
+# Now you can use:
+git cc
+```
 ## Update
 
 ```bash
