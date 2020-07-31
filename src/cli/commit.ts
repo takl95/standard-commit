@@ -16,7 +16,7 @@ import {
 
 const cli = meow(
   `
-  Usage: standard-commit [options...]
+  Usage: cc [options...]
 
   Where <options> is one of:
 
@@ -28,17 +28,8 @@ const cli = meow(
     
     -s --signoff     
     Add Signed-off-by at the end of the commit log message.
-    
-    -n --no-verify   
-    Bypasses the pre-commit and commit-msg hooks.
-    
-    -e --edit        
-    further edit the message.
 
-  Alias: git cc <option> with:
-  
-    git config --global alias.cc '!standard-commit' 
-  `,
+`,
   {
     description: 'standard-commit',
     flags: {
