@@ -27,7 +27,7 @@
     "dist"
   ],
   "bin": {
-    "cc": "bin/commit.js",
+    "gcc": "bin/commit.js",
     "standard-commit-2": "bin/commit.js"
   },
   "scripts": {
