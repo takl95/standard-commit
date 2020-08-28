@@ -4,7 +4,7 @@ A zero-config opiniated, [commitizen](https://github.com/commitizen/cz-cli)
 like command line utility to use
 [conventional commits](https://conventionalcommits.org/).
 
-- **cc**: Same as `git commit` but with prompt and formatting of the
+- **gcc**: Same as `git commit` but with prompt and formatting of the
   commit message.
 
 ## Installation
@@ -13,13 +13,13 @@ npm install -g standard-commit-2
 ```
 ## Usage
 ```bash
-cc --help
+gcc --help
 ```
 ## Git Alias
 ```bash
 git config --global alias.cc "!standard-commit-2"
 # Now you can use:
-git cc
+git gcc
 ```
 ## Update
 
@@ -30,6 +30,6 @@ npm update -g standard-commit-2
 ## Configuration
 Use the suggested defaults.
 ```bash
-cc --init
+gcc --init
 ```
 you can configure standard-commit via a `.standard-commitrc` file. You should add this file to the git repo.
